@@ -1,0 +1,22 @@
+name: Spike (research)
+description: Time-boxed investigation to answer a question
+labels: ["spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question to answer
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time box
+      placeholder: e.g. 2 hours
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: A decision record, a short writeup, or a recommendation.

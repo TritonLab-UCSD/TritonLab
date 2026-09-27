@@ -1,0 +1,13 @@
+# Copy to ~/.dbt/profiles.yml and fill in from your Supabase connection details.
+tritonlab:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: <host>
+      port: 5432
+      user: postgres
+      password: <password>
+      dbname: postgres
+      schema: public
+      threads: 4

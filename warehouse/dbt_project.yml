@@ -1,0 +1,14 @@
+name: tritonlab
+version: "0.1.0"
+config-version: 2
+profile: tritonlab
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  tritonlab:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

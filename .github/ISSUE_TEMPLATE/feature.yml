@@ -1,0 +1,30 @@
+name: Feature / task
+description: A unit of planned work
+labels: ["feature"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What this task accomplishes and why.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: Rough plan.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Specific, checkable acceptance criteria.
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      options: [data, ml, llm, frontend, infra, docs]
+    validations:
+      required: true
